@@ -43,7 +43,7 @@ function Hero() {
         </div>
 
         {/* Decorative coding panel */}
-        <div className="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-2xl">
+        <div className="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-2xl hover:shadow-lg hover:-translate-x-4 transition duration-300">
 
           <div className="flex gap-2 mb-6">
             <span className="w-3 h-3 bg-red-400 rounded-full"></span>

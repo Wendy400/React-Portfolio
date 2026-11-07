@@ -38,6 +38,9 @@ function App() {
       <Navbar />
       <Hero />
       <Skills />
+
+      {/*thin line separating skills and projects */}
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-blue-500 to-transparent mb-10"></div>
       <ProjectList
         projects={filteredProjects}
         searchTerm={searchTerm}

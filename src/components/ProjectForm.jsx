@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function ProjectForm({ onAddProject, onClose }) {
   const [formData, setFormData] = useState({
@@ -27,12 +27,12 @@ function ProjectForm({ onAddProject, onClose }) {
       title: formData.title,
       category: formData.category,
       description: formData.description,
-      technologies: formData.technologies,
-      image: formData.image,
-      link : formData.link
+      technologies: formData.technologies
         .split(",")
         .map((technology) => technology.trim())
         .filter(Boolean),
+      image: formData.image,
+      link: formData.link.trim(),
     };
 
     onAddProject(newProject);
