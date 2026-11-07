@@ -12,31 +12,31 @@ function ProjectList({
     onAddProject,
 }) {
     return (
-        <section id="projects" className="bg-slate-50 py-10 px-6 md:px-12">
-            <div className="max-w-7xl mx-auto">
+        <section id="projects">
+            <div className=" px-10  ">
 
-                <div className="text-center mb-12">
+                <div className="text-center mb-12 ">
 
-                    <h2 className="text-5xl md:text-4xl font-bold text-slate-900 mt-3">
+                    <h2 className="text-5xl md:text-4xl font-bold ">
                         Featured Projects
                     </h2>
                 </div>
 
                 {/* Search bar */}
                 <div className="max-w-xl mx-auto mb-10">
-                    <input
-                        type="search"
-                        placeholder="Search projects by title, category..."
-                        value={searchTerm}
-                        onChange={(event) => onSearchChange(event.target.value)}
-                        className="w-full px-5 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
+                    <div className="flex items-center gap-3">
+                        <input
+                            type="search"
+                            placeholder="Search projects by title, category..."
+                            value={searchTerm}
+                            onChange={(event) => onSearchChange(event.target.value)}
+                            className="min-w-0 flex-1 px-5 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 "
+                        />
 
-                    {/* Add Project Button */}
-                    <div className="flex justify-end mb-6">
                         <button
+                            type="button"
                             onClick={onShowForm}
-                            className="bg-blue-600 text-white px-5 py-3 rounded-lg hover:bg-blue-700 transition"
+                            className="shrink-0 bg-blue-600 text-white px-5 py-3 rounded-lg hover:bg-blue-700 transition whitespace-nowrap"
                         >
                             + Add Project
                         </button>
@@ -53,7 +53,7 @@ function ProjectList({
 
 
                 {projects.length > 0 ? (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-16">
                         {projects.map((project) => (
                             <ProjectCard key={project.id} project={project} />
                         ))}

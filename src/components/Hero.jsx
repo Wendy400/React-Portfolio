@@ -11,9 +11,6 @@ function Hero() {
         {/* Introduction */}
         <div className="space-y-6">
 
-          <p className="text-blue-400 font-semibold tracking-widest uppercase">
-            Welcome to my portfolio
-          </p>
 
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Turning Ideas Into
@@ -39,7 +36,7 @@ function Hero() {
               href="#skills"
               className="border border-slate-500 hover:border-blue-400 px-6 py-3 rounded-lg transition"
             >
-              View My Skills
+              View Skills
             </a>
 
           </div>

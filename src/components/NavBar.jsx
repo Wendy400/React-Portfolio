@@ -6,12 +6,12 @@ function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
 
         {/* Brand */}
-        <h1 className="text-2xl font-bold text-blue-400">
+        <h1 className="text-3xl font-bold text-blue-400">
           DevWorld.
         </h1>
 
         {/* Navigation links */}
-        <div className="hidden sm:flex items-center gap-8">
+        <div className="hidden sm:flex items-center gap-8 text-xl py-2 px-8">
           <a href="#home" className="hover:text-blue-400 transition">
             Home
           </a>
@@ -25,13 +25,7 @@ function Navbar() {
           </a>
         </div>
 
-        {/* Call to action */}
-        <a
-          href="#projects"
-          className="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg transition"
-        >
-          Explore Work
-        </a>
+      
 
       </div>
     </nav>

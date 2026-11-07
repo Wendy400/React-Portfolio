@@ -5,6 +5,8 @@ const projects = [
     category: "Frontend",
     description: "A website for a building and construction consultancy firm.",
     technologies: ["HTML", "CSS", "Bootstrap"],
+    link: "https://apexbusinessconsultancy.netlify.app/",
+    image: "/ABCimage.webp"
   },
 
   {
@@ -13,6 +15,8 @@ const projects = [
     category: "Frontend",
     description: "A replica of the YouTube video streaming platforms UI.",
     technologies: ["HTML", "CSS"],
+    link: "https://wendy400.github.io/HTML-CSS-course/youtube.html",
+    image: "youtube.jpg",
   },
 
   {
@@ -21,6 +25,8 @@ const projects = [
     category: "Frontend",
     description: "A dictionary single page application for searching, listening to words and saving favourites.",
     technologies: ["JavaScript", "CSS", "API"],
+    link :"https://wendy400.github.io/WORDme-project/",
+    image: "/wordme.jpg",
   },
 
   {
@@ -29,6 +35,8 @@ const projects = [
     category: "Frontend",
     description: "A live digital clock that displays the current time and date.",
     technologies: ["React", "CSS"],
+    link :"",
+    image: "/digitalclock.jpg",
   },
    
    {
@@ -37,6 +45,8 @@ const projects = [
     category: "Frontend",
     description: "A simple blog website for learning purposes.",
     technologies: ["React", "CSS"],
+    link : "",
+    image: "blogapp.jpg",
   },
 
 
@@ -45,7 +55,9 @@ const projects = [
     title: "Shoppella",
     category: "Backend",
     description: "An e-commerce website built for learning purposes.",
-    technologies: ["Python", "Django"],
+    technologies: ["Python", "Django","Bootstrap"],
+    link :"",
+    image: "shoppella.jpg",
   },
 ];
 

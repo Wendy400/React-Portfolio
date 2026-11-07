@@ -6,6 +6,8 @@ function ProjectForm({ onAddProject, onClose }) {
     category: "",
     description: "",
     technologies: "",
+    link: "",
+    image: "", 
   });
 
   function handleChange(event) {
@@ -25,7 +27,9 @@ function ProjectForm({ onAddProject, onClose }) {
       title: formData.title,
       category: formData.category,
       description: formData.description,
-      technologies: formData.technologies
+      technologies: formData.technologies,
+      image: formData.image,
+      link : formData.link
         .split(",")
         .map((technology) => technology.trim())
         .filter(Boolean),
@@ -38,13 +42,15 @@ function ProjectForm({ onAddProject, onClose }) {
       category: "",
       description: "",
       technologies: "",
+      link: "",
+      image: "",
     });
 
     onClose();
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white p-6 rounded-xl shadow-md border border-slate-200 mb-10">
+    <form onSubmit={handleSubmit} className="bg-slate-100 p-6 rounded-xl shadow-md border border-slate-200 ">
       <h3 className="text-xl font-bold mb-5">Add a New Project</h3>
 
       <div className="grid gap-4">
@@ -82,6 +88,24 @@ function ProjectForm({ onAddProject, onClose }) {
           placeholder="Technologies (e.g. React, CSS, JavaScript)"
           className="border p-3 rounded-lg"
         />
+
+        <input
+          name="link"
+          value={formData.link}
+          onChange={handleChange}
+          placeholder="Project Link (eg https:/ github/newproject.com)"
+          className="border p-3 rounded-lg"
+        />
+
+        <input
+          name="image"
+          value={formData.image}
+          onChange={handleChange}
+          placeholder="Thumbnail URL"
+          className="border p-3 rounded-lg"
+        />
+
+
       </div>
 
       <div className="flex gap-3 mt-5">
